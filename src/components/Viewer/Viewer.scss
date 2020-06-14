@@ -1,0 +1,68 @@
+@import "../../assets/style/variable.scss";
+
+
+.Viewer {
+  background:#333;
+  .page {
+    background: #fff;
+    color: $viewer-primary-3;
+    font-family: Calibri;
+    padding: 5mm;
+    font-size: $font-small-5;
+    height: 297mm;
+    width: 210mm;
+    .resume-header {
+      display: flex;
+      .pofile-image {
+        img {
+          border-radius: 50%;
+          height: 140px;
+          width: 140px;
+        }
+      }
+      .header-info {
+        padding-left: 40px;
+        .userName {
+          font-size: $font-small-3;
+          font-weight: bold;
+        }
+        .designation {
+          font-size: $font-small-3;
+          color: $viewer-primary-2;
+        }
+        .summary {
+         font-size: $font-small-5;
+        }
+      }
+    }
+    .contact-bar {
+      align-items: center;
+      background: $viewer-primary-1;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: $font-small-6;
+      justify-content: center;
+      padding: 2mm 0 2mm 0;
+      .group {
+        display: flex;
+        padding: 4px 8px 4px 8px;
+        // justify-content: center;
+        align-items: center;
+        svg {
+          fill: $viewer-secondary-3;
+        }
+        .name {
+          padding-left: 2mm;
+        }
+      }
+    }
+    .resume-body {
+      .left-half {
+
+      }
+      .right-half {
+        
+      }
+    }
+  }
+}
