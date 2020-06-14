@@ -61,7 +61,7 @@ function ResumeBody({data}) {
     <div className="listHeader">
       { body?.listHeader }
     </div>
-    { (body?.header && priority > 3 && (body.startDate || body.endDate)) &&
+    { (body?.header && priority < 3 && (body.startDate || body.endDate)) &&
     <div className="listSubHeader">
       <div className="date">
         { dateFormatter(body.startDate, body.endDate) }

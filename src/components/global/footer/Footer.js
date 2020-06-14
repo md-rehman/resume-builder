@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.scss';
+import './Footer.scss';
 
 
-function Header() {
+function Footer() {
   return <>
-    HEADER
+    Footer
   </>
 }
 
-export default Header;
+export default Footer;
