@@ -3,26 +3,31 @@ import './App.scss';
 import Viewer from './components/Viewer/Viewer';
 import Header from './components/global/header/Header';
 import { ResumeJSONProvider } from './store/context/ResumeJSON';
+import NavMain from './components/global/nav/NavMain';
+import JsonEditor from './components/jsonEditor/JsonEditor';
+import Footer from './components/global/footer/Footer';
 
 function App() {
   return (
     <>
       <ResumeJSONProvider>
-        <header>
+        <div className="Header-wrapper">
           <Header />
-        </header>
-        <nav>
-
-        </nav>
-        <main className="Viewer-wrapper">
-          <Viewer />
+        </div>
+        {/* <div className="NavMain-wrapper">
+          <NavMain />
+        </div> */}
+        <main>
+          <div className="Viewer-wrapper">
+            <Viewer />
+          </div>
+          <div className="JsonEditor-wrapper">
+            <JsonEditor />
+          </div>
         </main>
-        <aside>
-
-        </aside>
-        <footer>
-
-        </footer>
+        <div className="Header-wrapper">
+          <Footer />
+        </div>
       </ResumeJSONProvider>
     </>
   );

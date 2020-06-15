@@ -1,0 +1,11 @@
+@import "./assets/style/variable.scss";
+
+main {
+  display: flex;
+  background: $main-primary-3;
+  justify-content: space-between;
+  .JsonEditor-wrapper {
+    // margin-left: 40px;
+    width: 100%;
+  }
+}

@@ -67,13 +67,13 @@ export const ResumeJSONProvider = props => {
         name: "VOLUNTEER EXPERIENCE",
         type: "singleItemList",
         mainSide: true,
-        priority: 2,
+        priority: 1,
         value: {
           header: "Software Developer [Intern]",
           listHeader: "Innolat Technologies Pvt. Ltd.",
           startDate: "06 / 2017",
           endDate: "03 / 2018",
-          location: "Bangalore, India",
+          location: "Raipur, India",
           summary: {
             name: "Achievements / Tasks",
             list: [
@@ -91,7 +91,7 @@ export const ResumeJSONProvider = props => {
       {
         name: "PERSONAL PROJECTS",
         type: "multiItemList",
-        priority: 3,
+        priority: 5,
         mainSide: true,
         value: [
           {
@@ -139,45 +139,45 @@ export const ResumeJSONProvider = props => {
         isVisible: true,
       },
       {
-        name: "TRANING",
+        name: "TECHNICAL SKILLS",
         type: "multiItemList",
-        priority: 4,
+        priority: 3,
         value: [
           {
-            header: "Bootstrap and SQL",
-            startDate: "06 / 2016",
+            header: "Web Technologies",
+            startDate: null,
             endDate: null,
             location: null,
             summary: {
               name: null,
               list: [
-                "from Innolat Technologies Pvt Ltd.",
+                "HTML5, CSS3, JavaScript, Ajax, JSON",
               ],
             },
             isVisible: true,
           },
           {
-            header: "AngularJS",
-            startDate: "07 / 2016",
+            header: "Framework and Libraries",
+            startDate: null,
             endDate: null,
             location: null,
             summary: {
               name: null,
               list: [
-                "from Innolat Technologies Pvt Ltd.",
+                "ReactJS, React Hooks, Redux, JQuery, Handlebars, Bootstrap, LESS",
               ],
             },
             isVisible: true,
           },
           {
-            header: "Java and Android",
-            startDate: "06 / 2016",
+            header: "Other Tools",
+            startDate: null,
             endDate: null,
             location: null,
             summary: {
               name: null,
               list: [
-                "from Innolat Technologies Pvt Ltd [by RCPL].",
+                "Git, Gulp, npm, yarn, JIRA",
               ],
             },
             isVisible: true,
@@ -234,6 +234,83 @@ export const ResumeJSONProvider = props => {
           {
             header: "Bootstrap",
             ranking: 5,
+          },
+        ],
+        isVisible: true,
+      },
+      {
+        name: "TRANING",
+        type: "multiItemList",
+        priority: 3,
+        value: [
+          {
+            header: "Bootstrap and SQL",
+            startDate: "06 / 2016",
+            endDate: null,
+            location: null,
+            summary: {
+              name: null,
+              list: [
+                "from Innolat Technologies Pvt Ltd.",
+              ],
+            },
+            isVisible: true,
+          },
+          {
+            header: "AngularJS",
+            startDate: "07 / 2016",
+            endDate: null,
+            location: null,
+            summary: {
+              name: null,
+              list: [
+                "from Innolat Technologies Pvt Ltd.",
+              ],
+            },
+            isVisible: true,
+          },
+          {
+            header: "Java and Android",
+            startDate: "06 / 2016",
+            endDate: null,
+            location: null,
+            summary: {
+              name: null,
+              list: [
+                "from Innolat Technologies Pvt Ltd [by RCPL].",
+              ],
+            },
+            isVisible: true,
+          },
+        ],
+        isVisible: true,
+      },
+      {
+        name: "EDUCATION",
+        type: "multiItemList",
+        priority: 4,
+        value: [
+          {
+            header: "BE [Computer Science and Engineering]",
+            listHeader: "Government Engineering College",
+            startDate: "2014",
+            endDate: "2014",
+            location: null,
+            summary: {
+              name: null,
+            },
+            isVisible: true,
+          },
+          {
+            header: "Higher Secondary",
+            listHeader: "Krishna Public School, Raipur",
+            startDate: "2018",
+            endDate: null,
+            location: null,
+            isVisible: true,
+            summary: {
+              name: null,
+            },
           },
         ],
         isVisible: true,
@@ -299,83 +376,6 @@ export const ResumeJSONProvider = props => {
           },
         ],
         isVisible: false,
-      },
-      {
-        name: "TECHNICAL SKILLS",
-        type: "multiItemList",
-        priority: 4,
-        value: [
-          {
-            header: "Web Technologies",
-            startDate: null,
-            endDate: null,
-            location: null,
-            summary: {
-              name: null,
-              list: [
-                "HTML5, CSS3, JavaScript, Ajax, JSON",
-              ],
-            },
-            isVisible: true,
-          },
-          {
-            header: "Framework and Libraries",
-            startDate: null,
-            endDate: null,
-            location: null,
-            summary: {
-              name: null,
-              list: [
-                "ReactJS, React Hooks, Redux, JQuery, Handlebars, Bootstrap, LESS",
-              ],
-            },
-            isVisible: true,
-          },
-          {
-            header: "Other Tools",
-            startDate: null,
-            endDate: null,
-            location: null,
-            summary: {
-              name: null,
-              list: [
-                "Git, Gulp, npm, yarn, JIRA",
-              ],
-            },
-            isVisible: true,
-          },
-        ],
-        isVisible: true,
-      },
-      {
-        name: "EDUCATION",
-        type: "multiItemList",
-        priority: 5,
-        value: [
-          {
-            header: "BE [Computer Science and Engineering]",
-            listHeader: "Government Engineering College",
-            startDate: "2014",
-            endDate: "2014",
-            location: null,
-            summary: {
-              name: null,
-            },
-            isVisible: true,
-          },
-          {
-            header: "Higher Secondary",
-            listHeader: "Krishna Public School, Raipur",
-            startDate: "2018",
-            endDate: null,
-            location: null,
-            isVisible: true,
-            summary: {
-              name: null,
-            },
-          },
-        ],
-        isVisible: true,
       },
     ]
   }

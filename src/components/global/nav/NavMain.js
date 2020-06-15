@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.scss';
+import './NavMain.scss';
 
 
-function Header() {
+function NavMain() {
   return <>
-    HEADER
+    NAVIGATION
   </>
 }
 
-export default Header;
+export default NavMain;

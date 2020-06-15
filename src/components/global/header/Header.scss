@@ -1,0 +1,9 @@
+@import '../../../assets/style/variable.scss';
+
+header {
+  background: $main-primary-4;
+  color: $main-secondary-2;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 40px;
+}

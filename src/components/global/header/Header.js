@@ -4,7 +4,9 @@ import './Header.scss';
 
 function Header() {
   return <>
-    HEADER
+    <header>
+      Only MY Resume Builder
+    </header>
   </>
 }
 
