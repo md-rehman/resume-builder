@@ -1,14 +1,28 @@
+
+$main-primary-3: #555;
+$main-primary-1: lighten( $main-primary-3, 50% );
+$main-primary-2: lighten( $main-primary-3, 25% );
+$main-primary-4: darken( $main-primary-3, 25% );
+$main-primary-5: darken( $main-primary-3, 50% );
+
+$main-secondary-3: #aaa;
+$main-secondary-1: lighten( $main-secondary-3, 50% );
+$main-secondary-2: lighten( $main-secondary-3, 25% );
+$main-secondary-4: darken( $main-secondary-3, 25% );
+$main-secondary-5: darken( $main-secondary-3, 50% );
+
+$font-small-1: 22pt;
 $viewer-primary-3: #444;
 $viewer-primary-1: lighten( $viewer-primary-3, 50% );
-$viewer-primary-2: lighten( $viewer-primary-3, 20% );
-$viewer-primary-4: darken( $viewer-primary-3, 20% );
-$viewer-primary-5: darken( $viewer-primary-3, 40% );
+$viewer-primary-2: lighten( $viewer-primary-3, 25% );
+$viewer-primary-4: darken( $viewer-primary-3, 25% );
+$viewer-primary-5: darken( $viewer-primary-3, 50% );
 
 $viewer-secondary-3: #3F59A8;
-$viewer-secondary-1: lighten( $viewer-secondary-3, 40% );
-$viewer-secondary-2: lighten( $viewer-secondary-3, 20% );
-$viewer-secondary-4: darken( $viewer-secondary-3, 20% );
-$viewer-secondary-5: darken( $viewer-secondary-3, 40% );
+$viewer-secondary-1: lighten( $viewer-secondary-3, 50% );
+$viewer-secondary-2: lighten( $viewer-secondary-3, 25% );
+$viewer-secondary-4: darken( $viewer-secondary-3, 25% );
+$viewer-secondary-5: darken( $viewer-secondary-3, 50% );
 
 $font-small-1: 22pt;
 $font-small-2: 20pt;

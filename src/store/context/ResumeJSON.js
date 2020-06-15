@@ -73,7 +73,7 @@ export const ResumeJSONProvider = props => {
           listHeader: "Innolat Technologies Pvt. Ltd.",
           startDate: "06 / 2017",
           endDate: "03 / 2018",
-          location: "Bangalore, India",
+          location: "Raipur, India",
           summary: {
             name: "Achievements / Tasks",
             list: [

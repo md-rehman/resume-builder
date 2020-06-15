@@ -11,21 +11,23 @@ function App() {
   return (
     <>
       <ResumeJSONProvider>
-        <header>
+        <div className="Header-wrapper">
           <Header />
-        </header>
-        <nav>
+        </div>
+        {/* <div className="NavMain-wrapper">
           <NavMain />
-        </nav>
-        <main className="Viewer-wrapper">
-          <Viewer />
+        </div> */}
+        <main>
+          <div className="Viewer-wrapper">
+            <Viewer />
+          </div>
+          <div className="JsonEditor-wrapper">
+            <JsonEditor />
+          </div>
         </main>
-        <aside>
-          <JsonEditor />
-        </aside>
-        <footer>
+        <div className="Header-wrapper">
           <Footer />
-        </footer>
+        </div>
       </ResumeJSONProvider>
     </>
   );

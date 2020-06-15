@@ -6,15 +6,27 @@ import { ResumeJSONContext } from '../../store/context/ResumeJSON';
 function JsonEditor() {
   const { state, dispatch } = useContext(ResumeJSONContext);
 
+  const [json, setJson] = useState(JSON.stringify(state, null, 2));
+
   const changeListner = event => {
-    dispatch({ type: 'UPDATE', data: JSON.parse(event.target.value) })
+    setJson(event.target.value)
+  }
+
+  const updateJSON = event => {
+    console.log(json);
+    
+    debugger;
+    dispatch({ type: 'UPDATE', data: JSON.parse(json) })
   }
 
   console.log(JSON.stringify(state));
   
 
   return <>
-    <textarea name="json-editor" id="" cols="140" rows="50" value={ JSON.stringify(state, undefined, 2)} onChange={e => changeListner(e)}></textarea>
+  <div className="JsonEditor">
+    <textarea name="json-editor" onChange={ e => changeListner(e) } value={ json } ></textarea>
+    <button onClick={ e => updateJSON(e) }>Update</button>
+  </div>
   </>
 }
 
