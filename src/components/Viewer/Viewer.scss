@@ -18,6 +18,8 @@
     .resume-header {
       display: flex;
       .pofile-image {
+        padding-right: 40px;
+
         img {
           border-radius: 50%;
           height: 140px;
@@ -25,7 +27,7 @@
         }
       }
       .header-info {
-        padding-left: 40px;
+        min-height: 140px;
         .userName {
           font-size: $font-small-3;
           font-weight: bold;

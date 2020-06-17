@@ -43,9 +43,9 @@ function Viewer() {
       <div className="Viewer">
         <div className="page">
           <div className="resume-header">
-            <div className="pofile-image">
+            {/* <div className="pofile-image">
               <img src={profileImage} alt=""/>
-            </div>
+            </div> */}
             <div className="header-info">
               <div className="userName">{ state.header.userName }</div>
               <div className="designation">{ state.header.designation }</div>
