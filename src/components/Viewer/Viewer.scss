@@ -2,17 +2,18 @@
 
 
 .Viewer {
-  background: $main-primary-3;
+  // background: $main-primary-3;
+
   margin: 40px;
-  // flex: 1;
-  flex-basis: auto;
+  // transform: scale(.5, .5);
   .page {
     background: #fff;
     color: $viewer-primary-3;
     font-family: Calibri;
-    padding: 5mm;
     font-size: $font-small-5;
+    padding: 5mm;
     height: 297mm;
+    box-shadow: 8px 8px 2px 2px var(--primary-main);
     width: 210mm;
     .resume-header {
       display: flex;
@@ -53,7 +54,7 @@
         // justify-content: center;
         align-items: center;
         svg {
-          fill: $viewer-secondary-3;
+          fill: var(--primary);
         }
         .name {
           padding-left: 2mm;

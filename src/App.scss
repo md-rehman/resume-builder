@@ -4,8 +4,29 @@ main {
   display: flex;
   background: $main-primary-3;
   justify-content: space-between;
+  background: linear-gradient(180deg, var(--primary), hsl(var(--primary-hue), var(--primary-saturation), 90%));
   .JsonEditor-wrapper {
     // margin-left: 40px;
     width: 100%;
+  }
+  .Viewer-wrapper {
+    border-right: 4px solid var(--primary-main);
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  main {
+    flex-wrap: wrap;
+    .Viewer-wrapper {
+      border-right: none;
+      width: 100vw;
+      height: 60vh;
+      .Viewer {
+        transform-origin: top left;
+        transform: scale(.4, .4);
+        margin: 20px;
+      }
+    }
   }
 }

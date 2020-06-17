@@ -31,3 +31,22 @@ $font-small-4: 16pt;
 $font-small-5: 14pt;
 $font-small-6: 12pt;
 $font-small-7: 10pt;
+
+:root {
+  --primary-hue: 225;
+  --primary-saturation: 63%;
+  --primary-lightness: 41%;
+  --primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness));
+  --primary-main: hsla(var(--primary-hue), var(--primary-saturation), 5%, .9);
+
+  // --viewer-secondary-0: rgba(63, 89, 168, 1);
+  // --viewer-secondary-9: color(#ffffff blackness(+ 5%));
+  // --viewer-secondary-8: rgba(63, 89, 168, .8);
+  // --viewer-secondary-7: rgba(63, 89, 168, .7);
+  // --viewer-secondary-6: rgba(63, 89, 168, .6);
+  // --viewer-secondary-5: rgba(63, 89, 168, .5);
+  // --viewer-secondary-4: rgba(63, 89, 168, .4);
+  // --viewer-secondary-3: rgba(63, 89, 168, .3);
+  // --viewer-secondary-2: rgba(63, 89, 168, .2);
+  // --viewer-secondary-1: rgba(63, 89, 168, .1);
+}

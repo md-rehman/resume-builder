@@ -1,7 +1,7 @@
 @import '../../../assets/style/variable.scss';
 
 footer {
-  background: $main-primary-4;
+  background: var(--primary-main);
   color: $main-secondary-2;
   text-align: center;
   padding: 16px 0;

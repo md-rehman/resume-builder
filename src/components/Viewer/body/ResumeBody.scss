@@ -19,7 +19,7 @@
 
 
   .name {
-    color: $viewer-secondary-3;
+    color: var(--primary);
     font-size: $font-small-4;
     font-weight: bold;
   }
@@ -123,8 +123,8 @@
       display: flex;
       flex-wrap: wrap;
       .prority-1 {
-        background: $viewer-secondary-3;
-        border: 2px solid $viewer-secondary-3;
+        background: var(--primary);
+        border: 2px solid var(--primary);
         border-radius: 8px;
         color: white;
         font-size: $font-small-6;
@@ -141,9 +141,9 @@
         margin: 8px 8px 0 0;
       }
       .prority-3 {
-        border: 2px solid $viewer-secondary-3;
+        border: 2px solid var(--primary);
         border-radius: 8px;
-        color: $viewer-secondary-3;
+        color: var(--primary);
         font-size: $font-small-6;
         font-weight: bold;
         padding: 4px 12px;
