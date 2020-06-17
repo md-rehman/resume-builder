@@ -1,15 +1,22 @@
 @import "./assets/style/variable.scss";
 
+body {
+  background: linear-gradient(180deg, var(--primary), hsl(var(--primary-hue), var(--primary-saturation), 90%));
+}
+
 main {
   display: flex;
-  background: $main-primary-3;
   justify-content: space-between;
-  background: linear-gradient(180deg, var(--primary), hsl(var(--primary-hue), var(--primary-saturation), 90%));
+  // background: linear-gradient(180deg, var(--primary), hsl(var(--primary-hue), var(--primary-saturation), 90%));
   .Viewer-wrapper {
-    border-right: 4px solid var(--primary-main);
+    // border-right: 4px solid var(--primary-dark-9);
   }
-  .JsonEditor-wrapper {
+  .ToolBox-wrapper {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    border-left: 4px solid var(--primary-dark-9);
+    
   }
 }
 
@@ -18,7 +25,6 @@ main {
   main {
     flex-wrap: wrap;
     .Viewer-wrapper {
-      border-right: none;
       width: 100vw;
       height: 60vh;
       .Viewer {
@@ -27,7 +33,8 @@ main {
         margin: 20px;
       }
     }
-    .JsonEditor-wrapper {
+    .ToolBox-wrapper {
+      border-left: none;
       width: 100%;
       .JsonEditor {
         height: 90vh;

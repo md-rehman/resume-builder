@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import './JsonEditor.scss';
-import { ResumeJSONContext } from '../../store/context/ResumeJSON';
+import { ResumeJSONContext } from '../../../store/context/ResumeJSON';
 
 
 function JsonEditor() {
@@ -13,14 +13,8 @@ function JsonEditor() {
   }
 
   const updateJSON = event => {
-    console.log(json);
-    
-    debugger;
     dispatch({ type: 'UPDATE', data: JSON.parse(json) })
   }
-
-  console.log(JSON.stringify(state));
-  
 
   return <>
   <div className="JsonEditor">

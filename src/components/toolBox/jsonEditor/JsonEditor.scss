@@ -1,0 +1,31 @@
+// @import '../../../assets/style/variable.scss';
+
+.JsonEditor {
+  margin: 40px;
+  margin-bottom: 0;
+  height: 297mm;
+  text-align: center;
+  textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: var(--primary-light);
+    font-size: 18px;
+    border: none;
+  }
+  button {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 28px;
+    background: var(--primary-light-9);
+    border: 2px solid var(--primary-dark-9);
+    border-radius: 25px;
+    color: var(--primary-dark-9);
+    &:hover {
+      background: transparent;
+      border: 2px solid var(--primary-light-9);
+      color: var(--primary-light-9);
+      cursor: pointer;
+    }
+  }
+}

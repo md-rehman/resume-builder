@@ -32,12 +32,16 @@ $font-small-5: 14pt;
 $font-small-6: 12pt;
 $font-small-7: 10pt;
 
-:root {
+html{
   --primary-hue: 225;
   --primary-saturation: 63%;
   --primary-lightness: 41%;
   --primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness));
-  --primary-main: hsla(var(--primary-hue), var(--primary-saturation), 5%, .9);
+  --primary-dark: hsl(var(--primary-hue), var(--primary-saturation), 5%);
+  --primary-dark-9: hsla(var(--primary-hue), var(--primary-saturation), 5%, .9);
+  --primary-dark-7: hsla(var(--primary-hue), var(--primary-saturation), 5%, .7);
+  --primary-light: hsl(var(--primary-hue), var(--primary-saturation), 90%);
+  --primary-light-9: hsla(var(--primary-hue), var(--primary-saturation), 90%, .9);
 
   // --viewer-secondary-0: rgba(63, 89, 168, 1);
   // --viewer-secondary-9: color(#ffffff blackness(+ 5%));
