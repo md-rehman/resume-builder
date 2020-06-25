@@ -7,7 +7,11 @@ import profileImage from '../../assets/ME.jpg';
 import { ResumeJSONContext } from '../../store/context/ResumeJSON';
 
 function Viewer() {
-  const { state } = useContext(ResumeJSONContext);
+  const { state, dispatch } = useContext(ResumeJSONContext);
+
+  const updateEntry = (key, value) => {
+    dispatch({ type: 'UPDATE_ONE_VALUE', key, value })
+  }
 
   const iconSelector = name => {
     switch (name) {
@@ -28,15 +32,23 @@ function Viewer() {
     }
   }
 
-  const contactBarTemplate = (contact) => {
-    return contact.map(item => item.isVisible && <>
-      <div className="group">
+  const contactBarTemplate = (contact, key) => {
+    return contact.map((item, index) => item.isVisible && <>
+      <div className="group" key={ item.index }>
         { iconSelector(item.name) }
-        <span className="name">
+        <span className="name" contentEditable={ state.header.userName ? true : false } onBlur={ e => updateEntry(key + index + "].value", e.currentTarget.textContent) }>
           { item.value }
         </span>
       </div>
     </>)
+  }
+
+  const headerTemplate = (header, key) => {
+    return <>
+      <div className="userName" contentEditable={ state.header.userName ? true : false } onBlur={ e => updateEntry(key + ".userName", e.currentTarget.textContent) }>{ header.userName }</div>
+      <div className="designation" contentEditable={ state.header.designation ? true : false } onBlur={ e => updateEntry(key + ".designation", e.currentTarget.textContent) }>{ header.designation }</div>
+      <div className="summary" contentEditable={ state.header.summary ? true : false } onBlur={ e => updateEntry(key + ".summary", e.currentTarget.textContent) }>{ header.summary }</div>
+    </>
   }
 
   return (
@@ -48,16 +60,14 @@ function Viewer() {
               <img src={profileImage} alt=""/>
             </div> */}
             <div className="header-info">
-              <div className="userName" contentEditable="true" onBlur={ e => console.log(e) }>{ state.header.userName }</div>
-              <div className="designation">{ state.header.designation }</div>
-              <div className="summary">{ state.header.summary }</div>
+              { headerTemplate(state.header, "header") }
             </div>
           </div>
           <div className="contact-bar">
-            { contactBarTemplate(state.contact) }
+            { contactBarTemplate(state.contact, "contact[") }
           </div>
           <div className="resume-body">
-            <ResumeBody data={ state.body } />
+            <ResumeBody />
           </div>
         </div>
       </div>

@@ -16,5 +16,9 @@
     box-shadow: 8px 8px 2px 2px var(--primary-dark-9);
     width: 210mm;
 
+    [contenteditable]:hover {
+      box-shadow: 0 2px var(--primary);
+    }
+
   }
 }

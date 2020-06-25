@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import './ToolBox.scss';
-import { MdColorLens, MdCode, MdSettings, MdBrightness3, MdBrightness5, MdFormatPaint, MdViewCompact } from "react-icons/md";
+import { MdInfo, MdColorLens, MdCode, MdSettings, MdBrightness3, MdBrightness5, MdFormatPaint, MdViewCompact } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 import JsonEditor from './jsonEditor/JsonEditor';
 import ThemeFormatter from './themeFormatter/ThemeFormatter';
@@ -12,6 +12,8 @@ function ToolBox() {
 
   const activeToolIdentifier = () => {
     switch (activeTool) {
+      case "Info":
+        return <ThemeFormatter />
       case "ThemeFormatter":
         return <ThemeFormatter />
       case "JsonEditor":
@@ -26,6 +28,9 @@ function ToolBox() {
       {activeToolIdentifier()}
     </div>
     <div className="Toolbar">
+      <div className="icon" onClick={ () => setActiveTool("Info") }>
+        <MdInfo />
+      </div>
       <div className="icon" onClick={ () => setActiveTool("ThemeFormatter") }>
         <MdColorLens />
       </div>
