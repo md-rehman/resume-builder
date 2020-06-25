@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { FaEnvelope, FaMobileAlt, FaMapMarkerAlt, FaLinkedinIn, FaGithub, FaCodepen, FaCode } from "react-icons/fa";
 import './Viewer.scss';
+import './template1.scss';
 import ResumeBody from './body/ResumeBody';
 import profileImage from '../../assets/ME.jpg';
 import { ResumeJSONContext } from '../../store/context/ResumeJSON';

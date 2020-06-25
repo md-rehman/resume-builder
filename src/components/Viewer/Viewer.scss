@@ -15,61 +15,6 @@
     height: 297mm;
     box-shadow: 8px 8px 2px 2px var(--primary-dark-9);
     width: 210mm;
-    .resume-header {
-      display: flex;
-      .pofile-image {
-        padding-right: 40px;
 
-        img {
-          border-radius: 50%;
-          height: 140px;
-          width: 140px;
-        }
-      }
-      .header-info {
-        min-height: 140px;
-        .userName {
-          font-size: $font-small-3;
-          font-weight: bold;
-        }
-        .designation {
-          font-size: $font-small-3;
-          color: $viewer-primary-2;
-        }
-        .summary {
-         font-size: $font-small-5;
-        }
-      }
-    }
-    .contact-bar {
-      align-items: center;
-      background: $viewer-primary-1;
-      display: flex;
-      flex-wrap: wrap;
-      font-size: $font-small-6;
-      justify-content: center;
-      margin: 0 -5mm;
-      padding: 2mm 0 2mm 0;
-      .group {
-        display: flex;
-        padding: 4px 8px 4px 8px;
-        // justify-content: center;
-        align-items: center;
-        svg {
-          fill: var(--primary);
-        }
-        .name {
-          padding-left: 2mm;
-        }
-      }
-    }
-    .resume-body {
-      .left-half {
-
-      }
-      .right-half {
-        
-      }
-    }
   }
 }
