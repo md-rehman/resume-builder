@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import './ToolBox.scss';
-import { MdColorLens, MdCode, MdSettings, MdBrightness3, MdBrightness5, MdFormatPaint } from "react-icons/md";
+import { MdColorLens, MdCode, MdSettings, MdBrightness3, MdBrightness5, MdFormatPaint, MdViewCompact } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 import JsonEditor from './jsonEditor/JsonEditor';
 import ThemeFormatter from './themeFormatter/ThemeFormatter';
@@ -35,6 +35,10 @@ function ToolBox() {
       <div className="icon" onClick={ () => setActiveTool("JsonEditor") }>
         <FaCode />
       </div>
+      <div className="icon" onClick={ () => setActiveTool("JsonEditor") }>
+        <MdViewCompact />
+      </div>
+      
       <div className="icon">
         <MdSettings />
       </div>

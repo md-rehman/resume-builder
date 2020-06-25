@@ -47,7 +47,7 @@ function Viewer() {
               <img src={profileImage} alt=""/>
             </div> */}
             <div className="header-info">
-              <div className="userName">{ state.header.userName }</div>
+              <div className="userName" contentEditable="true" onBlur={ e => console.log(e) }>{ state.header.userName }</div>
               <div className="designation">{ state.header.designation }</div>
               <div className="summary">{ state.header.summary }</div>
             </div>
