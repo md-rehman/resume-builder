@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import { AppContextReducer } from '../reducer/AppContextReducer';
 
-export const AppContextContext = createContext();
+export const AppContext = createContext();
 
 export const AppContextProvider = props => {
   const { children } = props;
@@ -9,11 +9,11 @@ export const AppContextProvider = props => {
     activeMainTheme: 'light'
   }
 
-  const [state, dispatch] = useReducer(AppContextReducer, initState)
+  const [state, dispatch] = useReducer(AppContextReducer, initState);
 
   return (
-    <AppContextContext.Provider value={ { state, dispatch } }>
+    <AppContext.Provider value={ { state, dispatch } }>
       { children }
-    </AppContextContext.Provider>
+    </AppContext.Provider>
   )
 }

@@ -1,5 +1,3 @@
-@import "../../assets/style/variable.scss";
-
 .resume-header {
   display: flex;
   .pofile-image {
@@ -14,24 +12,25 @@
   .header-info {
     min-height: 140px;
     .userName {
-      font-size: $font-small-3;
+      font-size: var(--font-1);
       font-weight: bold;
+      color: var(--primary);
     }
     .designation {
-      font-size: $font-small-3;
-      color: $viewer-primary-2;
+      font-size: var(--font-1);
+      color: var(--secondary);
     }
     .summary {
-      font-size: $font-small-5;
+      font-size: var(--font-3);
     }
   }
 }
 .contact-bar {
   align-items: center;
-  background: $viewer-primary-1;
+  background: var(--secondary-light-5);
   display: flex;
   flex-wrap: wrap;
-  font-size: $font-small-6;
+  font-size: var(--font-4);
   justify-content: center;
   margin: 0 -5mm;
   padding: 2mm 0 2mm 0;
@@ -48,9 +47,6 @@
     }
   }
 }
-
-
-
 .resume-body {
   // column-count: 2;
   display: flex;
@@ -70,41 +66,41 @@
 
   .name {
     color: var(--primary);
-    font-size: $font-small-4;
+    font-size: var(--font-2);
     font-weight: bold;
   }
   .header {
     .main {
-      font-size: $font-small-4;
+      font-size: var(--font-2);
       font-weight: bold;
     }
     .date {
-      font-size: $font-small-6;
+      font-size: var(--font-4);
       padding-left: .3rem;
     }
   }
   .listHeader {
-    font-size: $font-small-5;
+    font-size: var(--font-3);
   }
   .listSubHeader {
-    color: $viewer-primary-2;
-    font-size: $font-small-7;
+    color: var(--secondary-light);
+    font-size: var(--font-5);
     display: flex;
     justify-content: space-between;
   }
   .summary {
     .summary-name {
-      font-size: $font-small-7;
+      font-size: var(--font-5);
     }
     .summary-list {
       .item {
         display: flex;
         .icon {
-          font-size: $font-small-6;
+          font-size: var(--font-4);
           font-weight: bold;
         }
         .detail {
-          font-size: $font-small-6;
+          font-size: var(--font-4);
           padding-left: .5rem;
         }
       }
@@ -124,7 +120,7 @@
     &.priority-2 {
       .header {
         .main {
-          font-size: $font-small-5;
+          font-size: var(--font-3);
         }
         .date {
           display: none;
@@ -140,17 +136,17 @@
     &.priority-4 {
       .header {
         .main {
-          font-size: $font-small-5;
+          font-size: var(--font-3);
         }
         .date {
-          font-size: $font-small-7;
+          font-size: var(--font-5);
         }
       }
     }
     &.priority-5 {
       .header {
         .main {
-          font-size: $font-small-5;
+          font-size: var(--font-3);
         }
         .date {
           display: none;
@@ -158,7 +154,7 @@
       }
     }
     .header {
-      font-size: $font-small-5;
+      font-size: var(--font-3);
     }
     .summary {
       padding-bottom: .5rem;
@@ -177,16 +173,16 @@
         border: 2px solid var(--primary);
         border-radius: 8px;
         color: white;
-        font-size: $font-small-6;
+        font-size: var(--font-4);
         padding: 4px 12px;
         margin: 8px 8px 0 0;
       }
       .prority-2 {
-        background: $viewer-primary-3;
-        border: 2px solid $viewer-primary-3;
+        background: var(--secondary);
+        border: 2px solid var(--secondary);
         border-radius: 8px;
         color: white;
-        font-size: $font-small-6;
+        font-size: var(--font-4);
         padding: 4px 12px;
         margin: 8px 8px 0 0;
       }
@@ -194,16 +190,16 @@
         border: 2px solid var(--primary);
         border-radius: 8px;
         color: var(--primary);
-        font-size: $font-small-6;
+        font-size: var(--font-4);
         font-weight: bold;
         padding: 4px 12px;
         margin: 8px 8px 0 0;
       }
       .prority-4 {
-        border: 2px solid $viewer-primary-3;
+        border: 2px solid var(--secondary);
         border-radius: 8px;
-        color: $viewer-primary-3;
-        font-size: $font-small-6;
+        color: var(--secondary);
+        font-size: var(--font-4);
         font-weight: bold;
         padding: 4px 12px;
         margin: 8px 8px 0 0;
@@ -211,8 +207,8 @@
       .prority-5 {
         border: 2px solid transparent;
         border-radius: 8px;
-        color: $viewer-primary-3;
-        font-size: $font-small-6;
+        color: var(--secondary);
+        font-size: var(--font-4);
         font-weight: bold;
         padding: 4px 12px;
         margin: 8px 8px 0 0;

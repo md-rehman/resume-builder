@@ -44,7 +44,7 @@ function ResumeBody() {
     list.map((item, index) => <>
     <div className="item">
       <div className="icon">-</div>
-        <div className="detail" contentEditable onBlur={ e => updateEntry(key + "[" + index + "]", e.currentTarget.textContent) }>
+      <div className="detail" contentEditable onBlur={ e => updateEntry(key + "[" + index + "]", e.currentTarget.textContent) }>
         {item}
       </div>
     </div>

@@ -1,5 +1,4 @@
-@import "./assets/style/variable.scss";
-
+@import './assets/style/variable.scss';
 
 .background-main {
   
@@ -9,23 +8,31 @@
   right: 0;
   left: 0;
   z-index: -1;
-  background-size: 400% 400%;
-  -webkit-animation: ShineMotion 500s linear infinite;
-  -moz-animation: ShineMotion 500s linear infinite;
-  -o-animation: ShineMotion 500s linear infinite;
-  animation: ShineMotion 500s linear infinite;
-}
+  // background-size: 400% 400%;
+  // -webkit-animation: ShineMotion 500s linear infinite;
+  // -moz-animation: ShineMotion 500s linear infinite;
+  // -o-animation: ShineMotion 500s linear infinite;
+  // animation: ShineMotion 500s linear infinite;
 
-body {
   background: linear-gradient(333deg, var(--primary), var(--primary-light));
   background-size: 400% 400%;
 
-  -webkit-animation: backgroundMotion 30s ease infinite;
-  -moz-animation: backgroundMotion 30s ease infinite;
-  -o-animation: backgroundMotion 30s ease infinite;
-  animation: backgroundMotion 30s ease infinite;
+  -webkit-animation: backgroundMotion 15s linear infinite;
+  -moz-animation: backgroundMotion 15s linear infinite;
+  -o-animation: backgroundMotion 15s linear infinite;
+  animation: backgroundMotion 15s linear infinite;
 }
-body.dark {
+
+body {
+  // background: linear-gradient(333deg, var(--primary), var(--primary-light));
+  // background-size: 400% 400%;
+
+  // -webkit-animation: backgroundMotion 30s ease infinite;
+  // -moz-animation: backgroundMotion 30s ease infinite;
+  // -o-animation: backgroundMotion 30s ease infinite;
+  // animation: backgroundMotion 30s ease infinite;
+}
+.background-main.dark {
   background: linear-gradient(180deg, var(--primary), var(--primary-dark));
 }
 .background-shine {

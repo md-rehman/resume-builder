@@ -4,16 +4,37 @@ import { MdInfo, MdColorLens, MdCode, MdSettings, MdBrightness3, MdBrightness5, 
 import { FaCode } from "react-icons/fa";
 import JsonEditor from './jsonEditor/JsonEditor';
 import ThemeFormatter from './themeFormatter/ThemeFormatter';
+import { AppContext } from '../../store/context/AppContext';
 
 
 function ToolBox() {
-  // const { state, dispatch } = useContext(ResumeJSONContext);
-  const [activeTool, setActiveTool] = useState("ThemeFormatter")
+  const { state, dispatch } = useContext(AppContext);
+
+  const updateTheme = (theme) => {
+    dispatch({ type: 'UPDATE_THEME', theme })
+  }
+
+  const [activeTool, setActiveTool] = useState("ThemeFormatter");
+
+
+  const infoList = [
+    "Use Laptop or computer for better experience.",
+  ]
+  const infoTemplate = () =>
+    infoList.map((item, index) => <>
+      <div className="info-item">
+        <div className="icon">-</div>
+        <div className="detail">
+          { item }
+        </div>
+      </div>
+    </>
+    )
 
   const activeToolIdentifier = () => {
     switch (activeTool) {
       case "Info":
-        return <ThemeFormatter />
+        return infoTemplate()
       case "ThemeFormatter":
         return <ThemeFormatter />
       case "JsonEditor":
@@ -47,13 +68,9 @@ function ToolBox() {
       <div className="icon">
         <MdSettings />
       </div>
-      <div className="icon">
-        <MdBrightness3 />
-      </div>
-      <div className="icon">
-        <MdBrightness5 />
-      </div>
-      
+      {
+        state.activeMainTheme == 'light' ? <div className="icon" onClick={ () => updateTheme("dark") }><MdBrightness3 /></div> : <div className="icon" onClick={ () => updateTheme("light") }><MdBrightness5 /></div>
+      }
     </div>
   </>
 }
