@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.scss';
 import { MdPrint, MdFileDownload } from "react-icons/md";
+import { AppContext } from '../../../store/context/AppContext';
 
 
 function Header() {
+  const { dispatch } = useContext(AppContext);
+
   return <>
     <header>
       <div className="left">
@@ -12,7 +15,7 @@ function Header() {
         </div>
       </div>
       <div className="right">
-        <div className="icon" title="Print View">
+        <div className="icon" title="Print View" onClick={ () => dispatch({ type: "UPDATE_VIEW", view: "printView"}) } >
           <MdPrint />
         </div>
         <div className="icon" title="Download">

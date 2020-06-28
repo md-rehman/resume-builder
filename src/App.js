@@ -7,9 +7,10 @@ import NavMain from './components/global/nav/NavMain';
 import Footer from './components/global/footer/Footer';
 import ToolBox from './components/toolBox/ToolBox';
 import { AppContext } from './store/context/AppContext';
+import Page from './components/viewer/page/Page';
 
 function App() {
-  const { state, dispatch } = useContext(AppContext);
+  const { state } = useContext(AppContext);
 
 
   const mainTemplate = () => <>
@@ -21,23 +22,23 @@ function App() {
           <NavMain />
         </div> */}
     <main>
-      <ResumeJSONProvider>
-        <div className="background-shine obtuse"></div>
-        <div className="background-shine acute"></div>
-        <div className="Viewer-wrapper">
-          <Viewer />
-        </div>
-        <div className="ToolBox-wrapper">
-          <ToolBox />
-        </div>
-      </ResumeJSONProvider>
+      <div className="background-shine obtuse"></div>
+      <div className="background-shine acute"></div>
+      <div className="Viewer-wrapper">
+        <Viewer />
+      </div>
+      <div className="ToolBox-wrapper">
+        <ToolBox />
+      </div>
     </main>
     <div className="Header-wrapper">
       <Footer />
     </div>
   </>
 
-  const printViewTemplate = () => <></>
+  const printViewTemplate = () => <>
+    <Page />
+  </>
 
   const TemplateSetter = () => {
     switch (state.activeView) {
@@ -45,7 +46,6 @@ function App() {
         return mainTemplate();
       case 'printView':
         return printViewTemplate();
-        
       default:
         return mainTemplate();
 

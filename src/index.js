@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { AppContextProvider } from './store/context/AppContext';
+import { ResumeJSONProvider } from './store/context/ResumeJSON';
 
 ReactDOM.render(
   <React.StrictMode>
     <AppContextProvider>
-      <App />
+      <ResumeJSONProvider>
+        <App />
+      </ResumeJSONProvider>
     </AppContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,0 +1,18 @@
+.page {
+  background: #fff;
+  color: var(--font);
+  font-family: Calibri;
+  font-size: var(--font-size-3);
+  padding: 5mm;
+  height: 297mm;
+  box-shadow: 8px 8px 2px 2px var(--primary-dark-9);
+  width: 210mm;
+  &.printView {
+    box-shadow: none;
+  }
+
+  [contenteditable]:hover {
+    box-shadow: 0 2px var(--primary);
+  }
+
+}
