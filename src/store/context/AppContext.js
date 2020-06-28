@@ -6,7 +6,9 @@ export const AppContext = createContext();
 export const AppContextProvider = props => {
   const { children } = props;
   const initState = {
-    activeMainTheme: 'light'
+    activeView: 'main',
+    activeMainTheme: 'light',
+    activeTemplate: 'template1',
   }
 
   const [state, dispatch] = useReducer(AppContextReducer, initState);

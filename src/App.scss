@@ -1,18 +1,12 @@
 @import './assets/style/variable.scss';
 
 .background-main {
-  
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: -1;
-  // background-size: 400% 400%;
-  // -webkit-animation: ShineMotion 500s linear infinite;
-  // -moz-animation: ShineMotion 500s linear infinite;
-  // -o-animation: ShineMotion 500s linear infinite;
-  // animation: ShineMotion 500s linear infinite;
 
   background: linear-gradient(333deg, var(--primary), var(--primary-light));
   background-size: 400% 400%;
@@ -23,38 +17,8 @@
   animation: backgroundMotion 15s linear infinite;
 }
 
-body {
-  // background: linear-gradient(333deg, var(--primary), var(--primary-light));
-  // background-size: 400% 400%;
-
-  // -webkit-animation: backgroundMotion 30s ease infinite;
-  // -moz-animation: backgroundMotion 30s ease infinite;
-  // -o-animation: backgroundMotion 30s ease infinite;
-  // animation: backgroundMotion 30s ease infinite;
-}
 .background-main.dark {
   background: linear-gradient(180deg, var(--primary), var(--primary-dark));
-}
-.background-shine {
-  --shine-deg: 123deg;
-  --shine-location: 55%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
-// background: linear-gradient(90deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%), linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%), linear-gradient(270deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%), linear-gradient(360deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%);
-
-// background: linear-gradient(var(--shine-deg), rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%);
-
-
-
-
-
-  background: linear-gradient(123deg, rgba(0,0,0,0), rgba(0,0,0,0) 35%, rgba(255,255,255,.2) 55%, rgba(0,0,0,.2) 55%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 100%), linear-gradient(37deg, rgba(0,0,0,0), rgba(0,0,0,0) 35%, rgba(255,255,255,.2) 55%, rgba(0,0,0,.2) 55%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 100%);
-  z-index: -1;
-
 }
 @-webkit-keyframes backgroundMotion {
     0%{background-position:32% 0%;}
@@ -76,6 +40,87 @@ body {
     50%{background-position:69% 100%}
     100%{background-position:32% 0%}
 }
+
+
+
+
+// .background-shine {
+//   --shine-deg: 123deg;
+//   --shine-location: 55%;
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+
+//   // background: linear-gradient(90deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%), linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%), linear-gradient(270deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%), linear-gradient(360deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%);
+//   // background: linear-gradient(var(--shine-deg), rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) var(--shine-location), rgba(0, 0, 0, .3) var(--shine-location), rgba(0, 0, 0, 0) 70%);
+//   background: linear-gradient(123deg, rgba(0,0,0,0), rgba(0,0,0,0) 35%, rgba(255,255,255,.2) 55%, rgba(0,0,0,.2) 55%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 100%), linear-gradient(37deg, rgba(0,0,0,0), rgba(0,0,0,0) 35%, rgba(255,255,255,.2) 55%, rgba(0,0,0,.2) 55%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 100%);
+//   z-index: -1;
+
+// }
+
+
+.background-shine {
+  position: fixed;
+  top: -50vh;
+  bottom: -50vh;
+  right: -50vw;
+  left: -50vw;
+  z-index: -1;
+}
+.obtuse {
+  background: linear-gradient(123deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) 55%, rgba(0, 0, 0, .3) 55%, rgba(0, 0, 0, 0) 70%);
+  // transform: rotate(5deg);
+  // from 30deg to -7 (max)
+  -webkit-animation: shineMotion 75s ease infinite alternate-reverse;
+  -moz-animation: shineMotion 75s ease infinite alternate-reverse;
+  -o-animation: shineMotion 75s ease infinite alternate-reverse;
+  animation: shineMotion 75s ease infinite alternate-reverse;
+}
+
+.acute {
+  background: linear-gradient(37deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, .3) 55%, rgba(0, 0, 0, .3) 55%, rgba(0, 0, 0, 0) 70%);
+  // transform: rotate(30deg);
+  // from 30deg to -7 (max)
+  -webkit-animation: shineMotion 115s ease infinite alternate;
+  -moz-animation: shineMotion 115s ease infinite alternate;
+  -o-animation: shineMotion 15s ease infinite alternate;
+  animation: shineMotion 115s ease infinite alternate;
+
+}
+@-webkit-keyframes shineMotion {
+  0%  {transform: rotate(-7deg)}
+  25% {transform: rotate(18deg)}
+  50% {transform: rotate(5deg)}
+  75% {transform: rotate(18deg)}
+  100%{transform: rotate(30deg)}
+}
+@-moz-keyframes shineMotion {
+  0%  {transform: rotate(-7deg)}
+  25% {transform: rotate(18deg)}
+  50% {transform: rotate(5deg)}
+  75% {transform: rotate(18deg)}
+  100%{transform: rotate(30deg)}
+}
+@-o-keyframes shineMotion {
+  0%  {transform: rotate(-7deg)}
+  25% {transform: rotate(18deg)}
+  50% {transform: rotate(5deg)}
+  75% {transform: rotate(18deg)}
+  100%{transform: rotate(30deg)}
+}
+@keyframes shineMotion {
+  0%  {transform: rotate(-7deg)}
+  25% {transform: rotate(18deg)}
+  50% {transform: rotate(5deg)}
+  75% {transform: rotate(18deg)}
+  100%{transform: rotate(30deg)}
+}
+
+
+
+
 
 
 main {

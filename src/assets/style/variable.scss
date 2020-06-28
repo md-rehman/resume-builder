@@ -65,9 +65,21 @@ html{
   --secondary-light-7: hsl(var(--secondary-hue), var(--secondary-saturation), 70%, .7);
   --secondary-light-5: hsl(var(--secondary-hue), var(--secondary-saturation), 70%, .5);
 
-  --font-1: 18pt;
-  --font-2: 16pt;
-  --font-3: 14pt;
-  --font-4: 12pt;
-  --font-5: 10pt;
+  // Font Color
+  --font-hue: 0;
+  --font-saturation: 0%;
+  --font-lightness: 50%;
+  --font: hsl(var(--font-hue), var(--font-saturation), var(--font-lightness));
+  
+  --font-dark: hsl(var(--font-hue), var(--font-saturation), 30%);
+  --font-light: hsl(var(--font-hue), var(--font-saturation), 70%);
+  --font-light-7: hsl(var(--font-hue), var(--font-saturation), 70%, .7);
+  --font-light-5: hsl(var(--font-hue), var(--font-saturation), 70%, .5);
+
+
+  --font-size-1: 18pt;
+  --font-size-2: 16pt;
+  --font-size-3: 14pt;
+  --font-size-4: 12pt;
+  --font-size-5: 10pt;
 }

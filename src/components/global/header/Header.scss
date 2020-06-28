@@ -1,7 +1,24 @@
 header {
   background: var(--primary-dark-9);
-  color: var(--secondary);
+  // color: var(--font);
+  color: var(--primary-light-9);
   text-align: center;
-  padding: 16px 0;
+  padding: 16px 8px 16px 16px;
   font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    .logo {
+
+    }
+  }
+  .right {
+    display: flex;
+    .icon {
+      font-size: 40px;
+      margin-left: 26px;
+      cursor: pointer;
+    }
+  }
 }

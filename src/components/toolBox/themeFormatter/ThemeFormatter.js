@@ -14,6 +14,11 @@ function ThemeFormatter() {
     lightness: 50,
   })
   const [font, setFont] = useState({
+    hue: 0,
+    saturation: 0,
+    lightness: 50,
+  })
+  const [fontSize, setFontSize] = useState({
     heading: 18,
     subHeading: 16,
     base: 14,
@@ -35,9 +40,15 @@ function ThemeFormatter() {
         [tag]: event.target.value
       })
     } else if (event.target.name.includes('font')) {
-      document.getElementsByTagName('html')[0].style.setProperty(event.target.name, event.target.value + "pt");
+      document.getElementsByTagName('html')[0].style.setProperty(event.target.name, event.target.value + (event.target.name.includes("hue") ? "" : "%"));
       setFont({
         ...font,
+        [tag]: event.target.value
+      })
+    } else if (event.target.name.includes('font-size')) {
+      document.getElementsByTagName('html')[0].style.setProperty(event.target.name, event.target.value + "pt");
+      setFontSize({
+        ...fontSize,
         [tag]: event.target.value
       })
     }
@@ -86,32 +97,52 @@ function ThemeFormatter() {
       </div>
       <div className="input-group">
         <div className="group-header">
-          Font:
+          Font Color:
+        </div>
+        <div className="input-pair">
+          <label htmlFor="hue">Hue (between 0 and 359):
+          </label>
+          <input type="range" name="--font-hue" min="0" max="359" onChange={ e => handleCSSVaribleUpdate(e, 'hue') } value={ font.hue } />
+        </div>
+        <div className="input-pair">
+            <label htmlFor="saturation">Saturation (between 0 and 100):
+          </label>
+          <input type="range" name="--font-saturation" min="0" max="100" onChange={ e => handleCSSVaribleUpdate(e, 'saturation') } value={ font.saturation } />
+        </div>
+        <div className="input-pair">
+          <label htmlFor="lightness">Lightness (between 0 and 100):
+          </label>
+          <input type="range" name="--font-lightness" min="0" max="100" onChange={ e => handleCSSVaribleUpdate(e, 'lightness') } value={ font.lightness } />
+        </div>
+      </div>
+      <div className="input-group">
+        <div className="group-header">
+          FontSize:
         </div>
         <div className="input-pair">
           <label htmlFor="hue">Heading:
           </label>
-          <input type="range" name="--font-1" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'heading') } value={ font.heading } />
+          <input type="range" name="--font-size-1" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'heading') } value={ fontSize.heading } />
         </div>
         <div className="input-pair">
           <label htmlFor="hue">Sub-Heading:
           </label>
-          <input type="range" name="--font-2" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'subHeading') } value={ font.subHeading } />
+          <input type="range" name="--font-size-2" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'subHeading') } value={ fontSize.subHeading } />
         </div>
         <div className="input-pair">
           <label htmlFor="hue">Base:
           </label>
-          <input type="range" name="--font-3" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'base') } value={ font.base } />
+          <input type="range" name="--font-size-3" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'base') } value={ fontSize.base } />
         </div>
         <div className="input-pair">
           <label htmlFor="hue">Text:
           </label>
-          <input type="range" name="--font-4" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'text') } value={ font.text } />
+          <input type="range" name="--font-size-4" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'text') } value={ fontSize.text } />
         </div>
         <div className="input-pair">
           <label htmlFor="hue">Sub-Text:
           </label>
-          <input type="range" name="--font-5" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'subText') } value={ font.subText } />
+          <input type="range" name="--font-size-5" min="5" max="40" onChange={ e => handleCSSVaribleUpdate(e, 'subText') } value={ fontSize.subText } />
         </div>
       </div>
     </div>

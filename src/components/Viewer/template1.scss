@@ -12,16 +12,16 @@
   .header-info {
     min-height: 140px;
     .userName {
-      font-size: var(--font-1);
+      font-size: var(--font-size-1);
       font-weight: bold;
       color: var(--primary);
     }
     .designation {
-      font-size: var(--font-1);
-      color: var(--secondary);
+      font-size: var(--font-size-1);
+      color: var(--font);
     }
     .summary {
-      font-size: var(--font-3);
+      font-size: var(--font-size-3);
     }
   }
 }
@@ -30,7 +30,7 @@
   background: var(--secondary-light-5);
   display: flex;
   flex-wrap: wrap;
-  font-size: var(--font-4);
+  font-size: var(--font-size-4);
   justify-content: center;
   margin: 0 -5mm;
   padding: 2mm 0 2mm 0;
@@ -44,6 +44,7 @@
     }
     .name {
       padding-left: 2mm;
+      color: var(--secondary);
     }
   }
 }
@@ -66,41 +67,41 @@
 
   .name {
     color: var(--primary);
-    font-size: var(--font-2);
+    font-size: var(--font-size-2);
     font-weight: bold;
   }
   .header {
     .main {
-      font-size: var(--font-2);
+      font-size: var(--font-size-2);
       font-weight: bold;
     }
     .date {
-      font-size: var(--font-4);
+      font-size: var(--font-size-4);
       padding-left: .3rem;
     }
   }
   .listHeader {
-    font-size: var(--font-3);
+    font-size: var(--font-size-3);
   }
   .listSubHeader {
-    color: var(--secondary-light);
-    font-size: var(--font-5);
+    color: var(--font-light);
+    font-size: var(--font-size-5);
     display: flex;
     justify-content: space-between;
   }
   .summary {
     .summary-name {
-      font-size: var(--font-5);
+      font-size: var(--font-size-5);
     }
     .summary-list {
       .item {
         display: flex;
         .icon {
-          font-size: var(--font-4);
+          font-size: var(--font-size-4);
           font-weight: bold;
         }
         .detail {
-          font-size: var(--font-4);
+          font-size: var(--font-size-4);
           padding-left: .5rem;
         }
       }
@@ -120,7 +121,7 @@
     &.priority-2 {
       .header {
         .main {
-          font-size: var(--font-3);
+          font-size: var(--font-size-3);
         }
         .date {
           display: none;
@@ -136,17 +137,17 @@
     &.priority-4 {
       .header {
         .main {
-          font-size: var(--font-3);
+          font-size: var(--font-size-3);
         }
         .date {
-          font-size: var(--font-5);
+          font-size: var(--font-size-5);
         }
       }
     }
     &.priority-5 {
       .header {
         .main {
-          font-size: var(--font-3);
+          font-size: var(--font-size-3);
         }
         .date {
           display: none;
@@ -154,7 +155,7 @@
       }
     }
     .header {
-      font-size: var(--font-3);
+      font-size: var(--font-size-3);
     }
     .summary {
       padding-bottom: .5rem;
@@ -173,7 +174,7 @@
         border: 2px solid var(--primary);
         border-radius: 8px;
         color: white;
-        font-size: var(--font-4);
+        font-size: var(--font-size-4);
         padding: 4px 12px;
         margin: 8px 8px 0 0;
       }
@@ -182,7 +183,7 @@
         border: 2px solid var(--secondary);
         border-radius: 8px;
         color: white;
-        font-size: var(--font-4);
+        font-size: var(--font-size-4);
         padding: 4px 12px;
         margin: 8px 8px 0 0;
       }
@@ -190,7 +191,7 @@
         border: 2px solid var(--primary);
         border-radius: 8px;
         color: var(--primary);
-        font-size: var(--font-4);
+        font-size: var(--font-size-4);
         font-weight: bold;
         padding: 4px 12px;
         margin: 8px 8px 0 0;
@@ -198,8 +199,8 @@
       .prority-4 {
         border: 2px solid var(--secondary);
         border-radius: 8px;
-        color: var(--secondary);
-        font-size: var(--font-4);
+        color: var(--font);
+        font-size: var(--font-size-4);
         font-weight: bold;
         padding: 4px 12px;
         margin: 8px 8px 0 0;
@@ -207,8 +208,8 @@
       .prority-5 {
         border: 2px solid transparent;
         border-radius: 8px;
-        color: var(--secondary);
-        font-size: var(--font-4);
+        color: var(--font);
+        font-size: var(--font-size-4);
         font-weight: bold;
         padding: 4px 12px;
         margin: 8px 8px 0 0;
