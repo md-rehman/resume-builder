@@ -147,8 +147,6 @@ function Page() {
   </>
 
   const singleItemListTemplate = (section, key) => {
-    console.log(key);
-    
     return (
       <section className={ "singleItemList priority-" + section.priority }>
         <div className="name" contentEditable={ section.name ? true : false } onBlur={ e => updateEntry(key+".name", e.currentTarget.textContent) }>

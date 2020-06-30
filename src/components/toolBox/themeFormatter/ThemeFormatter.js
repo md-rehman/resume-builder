@@ -39,19 +39,19 @@ function ThemeFormatter() {
         ...secondary,
         [tag]: event.target.value
       })
-    } else if (event.target.name.includes('font')) {
-      document.getElementsByTagName('html')[0].style.setProperty(event.target.name, event.target.value + (event.target.name.includes("hue") ? "" : "%"));
-      setFont({
-        ...font,
-        [tag]: event.target.value
-      })
     } else if (event.target.name.includes('font-size')) {
       document.getElementsByTagName('html')[0].style.setProperty(event.target.name, event.target.value + "pt");
       setFontSize({
         ...fontSize,
         [tag]: event.target.value
       })
-    }
+    } else {
+      document.getElementsByTagName('html')[0].style.setProperty(event.target.name, event.target.value + (event.target.name.includes("hue") ? "" : "%"));
+      setFont({
+        ...font,
+        [tag]: event.target.value
+      })
+    } 
   }
   return <>
     <div className="ThemeFormatter">

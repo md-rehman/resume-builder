@@ -18,9 +18,9 @@ function Header() {
         <div className="icon" title="Print View" onClick={ () => dispatch({ type: "UPDATE_VIEW", view: "printView"}) } >
           <MdPrint />
         </div>
-        <div className="icon" title="Download">
+        {/* <div className="icon" title="Download">
           <MdFileDownload />
-        </div>
+        </div> */}
       </div>
     </header>
   </>
