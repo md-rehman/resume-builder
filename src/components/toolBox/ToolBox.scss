@@ -17,6 +17,33 @@
   }
 }
 
+.template-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+.template-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primary-dark-7);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 240px;
+  .icon {
+    img {
+      max-width: 180px;
+      // height: 220px;
+    }
+  }
+  .detail {
+    margin-top: 10px;
+    color: var(--primary-light-9)
+  }
+}
+
 .info-item {
   display: flex;
   margin: 40px;

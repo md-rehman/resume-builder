@@ -5,7 +5,9 @@ import JsonEditor from './jsonEditor/JsonEditor';
 import ThemeFormatter from './themeFormatter/ThemeFormatter';
 import { AppContext } from '../../store/context/AppContext';
 import { ResumeJSONContext } from '../../store/context/ResumeJSON';
-
+import template1 from '../../assets/template1.png';
+import template2 from '../../assets/template2.png';
+import LayoutModifier from './layout/layoutModifier';
 
 function ToolBox() {
   const { state, dispatch } = useContext(AppContext);
@@ -14,8 +16,8 @@ function ToolBox() {
   const updateTheme = (theme) => {
     dispatch({ type: 'UPDATE_THEME', theme })
   }
-  const updateTemplate = (theme) => {
-    dispatch({ type: 'UPDATE_TEMPLATE', theme })
+  const updateTemplate = (template) => {
+    dispatch({ type: 'UPDATE_TEMPLATE', template })
   }
 
   const [activeTool, setActiveTool] = useState("ThemeFormatter");
@@ -25,20 +27,36 @@ function ToolBox() {
     {
       name: "Sleek",
       class: "template1",
+      img: template1,
     },
     {
-      name: "Modern",
+      name: "Sleek - Minimal",
       class: "template2",
+      img: template2,
     },
     {
-      name: "Professional",
+      name: "Sleek - Classic",
       class: "template3",
+      img: template2,
     },
+    {
+      name: "Sleek - Evolved",
+      class: "template4",
+      img: template2,
+    },
+    // {
+    //   name: "Modern",
+    //   class: "template7",
+    // },
+    // {
+    //   name: "Professional",
+    //   class: "template8",
+    // },
   ]
   const templateTemplate = () => 
     templateList.map((item, inedx) => <>
-      <div className="template-item">
-        <div className="icon">{item.class}</div>
+      <div className="template-item" onClick={ e => updateTemplate(item.class) }>
+        <div className="icon"><img src={item.img} alt={item.name}/></div>
         <div className="detail">
           { item.name }
         </div>
@@ -46,23 +64,21 @@ function ToolBox() {
     </>
     )
 
-  // const layoutList = resume.state.body.map(section => section.name);
-  const layoutTemplate = () =>
-    resume.state.body.map((item, index) => <>
-      <div className="info-item">
-        <div className="icon">-</div>
-        <div className="detail">
-          { item }
-        </div>
-      </div>
-    </>
-    )
+  // const layoutTemplate = () =>
+  //   resume.state.body.map((item, index) => <>
+  //     <div className="layout-item">
+  //       <div className="icon">-</div>
+  //       <div className="detail">
+  //         { item.name }
+  //       </div>
+  //     </div>
+  //   </>
+  //   )
 
   const infoList = [
     "Use Laptop or computer for better experience.",
     "If you're a developer, use JSON Editor for more precise editing.",
     "Keep the copy of JSON for future use.",
-    "Downlaod feature is coming soon.",
     "Template Feature is coming soon"
   ]
   const infoTemplate = () =>
@@ -81,9 +97,13 @@ function ToolBox() {
       case "Info":
         return infoTemplate()
       case "Template":
-        return templateTemplate()
+        return (
+          <div className="template-wrapper">
+            { templateTemplate() }
+          </div>
+        )
       case "Layout":
-        return layoutTemplate()
+        return <LayoutModifier />
       case "ThemeFormatter":
         return <ThemeFormatter />
       case "JsonEditor":
@@ -118,7 +138,7 @@ function ToolBox() {
       </div>
 
       
-      <div className="icon" title="Setting">
+      <div className="icon" title="Setting" onClick={ () => setActiveTool("ThemeFormatter") }>
         <MdSettings />
       </div>
       {

@@ -14,7 +14,7 @@ export const AppContextReducer = function (state, action) {
     case 'UPDATE_TEMPLATE':
       return {
         ...state,
-        activeTemplate: action.themplate
+        activeTemplate: action.template
       }
     default:
       return state;

@@ -1,6 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import './Page.scss';
 import './template1.scss';
+import './template2.scss';
+import './template3.scss';
+import './template4.scss';
 import { FaEnvelope, FaMobileAlt, FaMapMarkerAlt, FaLinkedinIn, FaGithub, FaCodepen, FaCode } from "react-icons/fa";
 import { ResumeJSONContext } from '../../../store/context/ResumeJSON';
 import profileImage from '../../../assets/ME.jpg';
@@ -31,7 +34,6 @@ function Page() {
     </>
   }
 
-
   const iconSelector = name => {
     switch (name) {
       case "email":
@@ -60,7 +62,6 @@ function Page() {
       </div>
     </>)
   }
-
 
   const bodyTemplate = () => {
     const mainSide = [];
@@ -157,7 +158,6 @@ function Page() {
     )
   }
 
-
   const multiItemListTemplate = (section, key) => {
     return (
       <section className={ "multiItemListTemplate priority-" + section.priority }>
@@ -182,15 +182,13 @@ function Page() {
     )
   }
 
-
-
   return (
     <>
-      <div className={ "page " + (app.state.activeView === 'printView' && 'printView')}>
+      <div className={ "page " + (app.state.activeView) + " " + (app.state.activeTemplate)}>
         <div className="resume-header">
           {/* <div className="pofile-image">
-              <img src={profileImage} alt=""/>
-            </div> */}
+            <img src={ profileImage } alt=""/>
+          </div> */}
           <div className="header-info">
             { headerTemplate(state.header, "header") }
           </div>

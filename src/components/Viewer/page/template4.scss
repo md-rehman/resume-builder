@@ -1,7 +1,8 @@
-.template1 {
-
+.template4 {
   .resume-header {
     display: flex;
+    border-left: 4px solid var(--secondary);
+    padding-left: 20px;
     .pofile-image {
       padding-right: 40px;
 
@@ -27,19 +28,21 @@
       }
     }
   }
-  
+
   .contact-bar {
     align-items: center;
-    background: var(--secondary-light-5);
+    background: none;
+    border: 4px solid var(--secondary);
+    border-left: none;
     display: flex;
     flex-wrap: wrap;
     font-size: var(--font-size-4);
     justify-content: center;
-    margin: 0 -5mm;
+    margin: 0;
     padding: 2mm 0 2mm 0;
     .group {
       display: flex;
-      padding: 4px 8px 4px 8px;
+      padding: 0 8px 0 8px;
       // justify-content: center;
       align-items: center;
       svg {
@@ -47,15 +50,17 @@
       }
       .name {
         padding-left: 2mm;
-        color: var(--secondary);
+        color: var(--primary);
       }
     }
   }
-  
+
   .resume-body {
     // column-count: 2;
     display: flex;
     justify-content: space-between;
+    border-left: 4px solid var(--secondary);
+    padding-left: 20px;
     section {
       margin-top: 1rem;
     }
@@ -221,5 +226,4 @@
       }
     }
   }
-
 }
