@@ -118,27 +118,27 @@ function ToolBox() {
       {activeToolIdentifier()}
     </div>
     <div className="Toolbar">
-      <div className="icon" title="Information" onClick={ () => setActiveTool("Info") }>
+      <div className={ "icon " + (activeTool === 'Info' ? 'active' : '' ) } title="Information" onClick={ () => setActiveTool("Info") }>
         <MdInfo />
       </div>
-      <div className="icon" title="Theme Formatter" onClick={ () => setActiveTool("ThemeFormatter") }>
+      <div className={ "icon " + (activeTool === 'ThemeFormatter' ? 'active' : '') } title="Theme Formatter" onClick={ () => setActiveTool("ThemeFormatter") }>
         <MdColorLens />
       </div>
       {/* <div className="icon" title="Theme Formatter" onClick={ () => setActiveTool("ThemeFormatter") }>
         <MdFormatPaint />
       </div> */}
-      <div className="icon" title="Template" onClick={ () => setActiveTool("Template") }>
+      <div className={ "icon " + (activeTool === 'Template' ? 'active' : '' ) } title="Template" onClick={ () => setActiveTool("Template") }>
         <MdViewCarousel />
       </div>
-      <div className="icon" title="Layout" onClick={ () => setActiveTool("Layout") }>
+      <div className={ "icon " + (activeTool === 'Layout' ? 'active' : '' ) } title="Layout" onClick={ () => setActiveTool("Layout") }>
         <MdDashboard />
       </div>
-      <div className="icon" title="Json Editor" onClick={ () => setActiveTool("JsonEditor") }>
+      <div className={ "icon " + (activeTool === 'JsonEditor' ? 'active' : '' ) }title="Json Editor" onClick={ () => setActiveTool("JsonEditor") }>
         <MdCode />
       </div>
 
       
-      <div className="icon" title="Setting" onClick={ () => setActiveTool("ThemeFormatter") }>
+      <div className={ "icon " + (activeTool === 'ThemeFormatter' ? 'active' : '' ) } title="Setting" onClick={ () => setActiveTool("ThemeFormatter") }>
         <MdSettings />
       </div>
       {
