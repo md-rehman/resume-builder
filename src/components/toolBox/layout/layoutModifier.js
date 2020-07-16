@@ -69,26 +69,33 @@ function LayoutModifier() {
   layoutTemplateSelector();
 
   return <>
-  <div className="layout-lists">
-    <div className="layout-item-list main" onDragEnter={ (e) => dragEnterGroupHandler(e, 'main') }>
-      <div className="list-header">
-        Main Sections
+    <div className="layout-lists">
+      <div className="layout-item-list main" onDragEnter={ (e) => dragEnterGroupHandler(e, 'main') }>
+        <div className="list-header">
+          Main Sections
+        </div>
+        { mainListTemplate }
       </div>
-      { mainListTemplate }
-    </div>
-    <div className="layout-item-list side" onDragEnter={ (e) => dragEnterGroupHandler(e, 'side') }>
-      <div className="list-header">
-        Side Sections
+      <div className="layout-item-list side" onDragEnter={ (e) => dragEnterGroupHandler(e, 'side') }>
+        <div className="list-header">
+          Side Sections
+        </div>
+        { sideListTemplate }
       </div>
-      { sideListTemplate }
-    </div>
-    <div className="layout-item-list invisible" onDragEnter={ (e) => dragEnterGroupHandler(e, 'invisble') }>
-      <div className="list-header">
-        Hidden Sections
+      <div className="layout-item-list invisible" onDragEnter={ (e) => dragEnterGroupHandler(e, 'invisble') }>
+        <div className="list-header">
+          Hidden Sections
+        </div>
+        { invisibleListTemplate }
       </div>
-      { invisibleListTemplate }
     </div>
-  </div>
+    {/* <div className="layout-lists element-adder">
+        <div className={ "layout-item" } draggable onDragStart={ e => dragStartHandler(e) } onDragEnd={ e => dragEndHandler(e) }>
+          <div className="detail">
+            Elements
+          </div>
+        </div>
+    </div> */}
   </>
 }
 

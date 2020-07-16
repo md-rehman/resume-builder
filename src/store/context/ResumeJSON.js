@@ -294,7 +294,7 @@ export const ResumeJSONProvider = props => {
             header: "BE [Computer Science and Engineering]",
             listHeader: "Government Engineering College",
             startDate: "2014",
-            endDate: "2014",
+            endDate: "2018",
             location: null,
             summary: {
               name: null,
@@ -304,7 +304,7 @@ export const ResumeJSONProvider = props => {
           {
             header: "Higher Secondary",
             listHeader: "Krishna Public School, Raipur",
-            startDate: "2018",
+            startDate: "2014",
             endDate: null,
             location: null,
             isVisible: true,

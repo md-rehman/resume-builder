@@ -8,6 +8,7 @@ import { ResumeJSONContext } from '../../store/context/ResumeJSON';
 import template1 from '../../assets/template1.png';
 import template2 from '../../assets/template2.png';
 import LayoutModifier from './layout/layoutModifier';
+import Settings from './settings/Settings';
 
 function ToolBox() {
   const { state, dispatch } = useContext(AppContext);
@@ -20,7 +21,7 @@ function ToolBox() {
     dispatch({ type: 'UPDATE_TEMPLATE', template })
   }
 
-  const [activeTool, setActiveTool] = useState("ThemeFormatter");
+  const [activeTool, setActiveTool] = useState("Settings");
 
 
   const templateList = [
@@ -108,8 +109,10 @@ function ToolBox() {
         return <ThemeFormatter />
       case "JsonEditor":
         return <JsonEditor />
+      case "Settings":
+        return <Settings />
       default:
-        return <ThemeFormatter />
+        return <Settings />
     }
   }
 
@@ -138,7 +141,7 @@ function ToolBox() {
       </div>
 
       
-      <div className={ "icon " + (activeTool === 'ThemeFormatter' ? 'active' : '' ) } title="Setting" onClick={ () => setActiveTool("ThemeFormatter") }>
+      <div className={ "icon " + (activeTool === 'Settings' ? 'active' : '') } title="Setting" onClick={ () => setActiveTool("Settings") }>
         <MdSettings />
       </div>
       {
