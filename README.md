@@ -1,3 +1,7 @@
+# Summary
+
+This project is created only for learning purpose, with one single intent to explore React Hooks (mainly Context Hook). I'm plannign to a more polished version (v2) soon.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
