@@ -12,6 +12,8 @@ body:
         3. Use the latest NativeBase release: https://github.com/GeekyAnts/NativeBase/releases
         4. Check examples from NativeBase KitchenSink https://github.com/GeekyAnts/NativeBase-KitchenSink
         5. For discussion purpose make use of NativeBase discord: https://discord.gg/TSgCw2UPmb
+
+        Help us help you better 
   - type: "input"
     id: "description"
     attributes:
@@ -37,29 +39,32 @@ body:
       description: |
         Explain how to cause the issue in the provided reproduction.
       value: |
-        1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error
+        1. Go to '...' 
+        2. Click on '...' 
+        3. Scroll down to '...' 
+        4. See error
   - type: "input"
-    id: "chakra-version"
+    id: "nativebase-version"
     attributes:
-      label: "Chakra UI Version"
-      description: "The version of Chakra UI you use."
-      placeholder: "1.6.4"
+      label: "NativeBase Version"
+      description: "The version of NativeBase you use."
+      placeholder: "3.3.1"
     validations:
       required: true
   - type: "checkboxes"
-    id: "operating-system"
+    id: "platform"
     attributes:
-      label: "Operating System"
-      description: "The operating system(s) this issue occurred with."
+      label: "Platform"
+      description: "The platform(s) this issue occurred with."
       options: 
-        - label: "android" 
-        - label: "iOS" 
+        - label: "Android" 
         - label: "CRA" 
+        - label: "iOS" 
         - label: "Next"
   - type: "input"
-    id: "other"
+    id: "other-platform"
     attributes:
-      label: "other"
+      label: "Other Platform"
       description: "Any other platform."
       placeholder: "platform"
   - type: "textarea"
@@ -68,4 +73,3 @@ body:
       label: "Additional Information"
       description: |
         Use this section to provide any additional information you might have like screenshots, notes, or links to ideas.
-
