@@ -14,7 +14,7 @@ body:
 - type: "markdown"
   attributes:
   value: |
-  ** Before reporting this bug, please...**
+  Before reporting this bug, please...
 
     1. Check the latest documentation: https://docs.nativebase.io/
     2. Check for existing open/closed issues for a possible duplicate before creating a new issue: https://github.com/GeekyAnts/NativeBase/issues
