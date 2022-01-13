@@ -28,7 +28,7 @@ body:
       label: "CodeSandBox/Snack link"
       description: |
         It would be easier for us to debug if you can reproduce the error in a codesandbox link or a snack link. You can use the [codesandbox template](https://codesandbox.io/s/native-base-v3-template-mq6ox)/[snack template](https://snack.expo.io/@mdrehman/nativebase-template).
-      placeholder: "https://codesandbox.io/"
+      placeholder: "https://codesandbox.io/  or   https://snack.expo.dev/"
     validations:
       required: true
   - type: "textarea"
@@ -36,7 +36,7 @@ body:
     attributes:
       label: "Steps to reproduce"
       description: |
-        Explain how to cause the issue in the provided reproduction.
+        Let us know how we reproduce it too.
       value: |
         1. Go to '...' 
         2. Click on '...' 
