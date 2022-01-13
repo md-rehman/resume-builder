@@ -5,63 +5,63 @@ body:
   - type: "markdown"
     attributes:
       value: |
-        Thanks for creating an issue 😄!
+        Before reporting this bug, please...**
 
-        Please search open/closed issues before submitting. Someone
-        might have asked the same thing before 😉!
-
-        We're all volunteers here, so help us help you by taking the time to
-        accurately fill out this template. ❤️
-- type: "input"
-  id: "description"
-  attributes:
-  label: "Description"
-  description: "A brief description of the issue."
-  placeholder: |
-  A clear and concise description of what you expected to happen.
-  validations:
-  required: true
-- type: "input"
-  id: "reproduction"
-  attributes:
-  label: "CodeSandBox/Snack link"
-  description: |
-  It would be easier for us to debug if you can reproduce the error in a codesandbox link or a snack link. You can use the [codesandbox template](https://codesandbox.io/s/native-base-v3-template-mq6ox)/[snack template](https://snack.expo.io/@mdrehman/nativebase-template).
-  placeholder: "https://codesandbox.io/"
-  validations:
-  required: true
-- type: "textarea"
-  id: "steps"
-  attributes:
-  label: "Steps to reproduce"
-  description: |
-  Explain how to cause the issue in the provided reproduction.
-  value: | 1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error
-- type: "input"
-  id: "chakra-version"
-  attributes:
-  label: "Chakra UI Version"
-  description: "The version of Chakra UI you use."
-  placeholder: "1.6.4"
-  validations:
-  required: true
-- type: "checkboxes"
-  id: "operating-system"
-  attributes:
-  label: "Operating System"
-  description: "The operating system(s) this issue occurred with."
-  options: - label: "android" - label: "iOS" - label: "CRA" - label: "Next"
-- type: "input"
-  id: "other"
-  attributes:
-  label: "other"
-  description: "Any other platform."
-  placeholder: "platform"
-- type: "textarea"
-  id: "additional-information"
-  attributes:
-  label: "Additional Information"
-  description: |
-  Use this section to provide any additional information you might have
-  like screenshots, notes, or links to ideas.
+        1. Check the latest documentation: https://docs.nativebase.io/
+        2. Check for existing open/closed issues for a possible duplicate before creating a new issue: https://github.com/GeekyAnts/NativeBase/issues
+        3. Use the latest NativeBase release: https://github.com/GeekyAnts/NativeBase/releases
+        4. Check examples from NativeBase KitchenSink https://github.com/GeekyAnts/NativeBase-KitchenSink
+        5. For discussion purpose make use of NativeBase discord: https://discord.gg/TSgCw2UPmb
+  - type: "input"
+    id: "description"
+    attributes:
+    label: "Description"
+    description: "A brief description of the issue."
+    placeholder: |
+    A clear and concise description of what you expected to happen.
+    validations:
+    required: true
+  - type: "input"
+    id: "reproduction"
+    attributes:
+    label: "CodeSandBox/Snack link"
+    description: |
+    It would be easier for us to debug if you can reproduce the error in a codesandbox link or a snack link. You can use the [codesandbox template](https://codesandbox.io/s/native-base-v3-template-mq6ox)/[snack template](https://snack.expo.io/@mdrehman/nativebase-template).
+    placeholder: "https://codesandbox.io/"
+    validations:
+    required: true
+  - type: "textarea"
+    id: "steps"
+    attributes:
+    label: "Steps to reproduce"
+    description: |
+    Explain how to cause the issue in the provided reproduction.
+    value: | 1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error
+  - type: "input"
+    id: "chakra-version"
+    attributes:
+    label: "Chakra UI Version"
+    description: "The version of Chakra UI you use."
+    placeholder: "1.6.4"
+    validations:
+    required: true
+  - type: "checkboxes"
+    id: "operating-system"
+    attributes:
+    label: "Operating System"
+    description: "The operating system(s) this issue occurred with."
+    options: - label: "android" - label: "iOS" - label: "CRA" - label: "Next"
+  - type: "input"
+    id: "other"
+    attributes:
+    label: "other"
+    description: "Any other platform."
+    placeholder: "platform"
+  - type: "textarea"
+    id: "additional-information"
+    attributes:
+    label: "Additional Information"
+    description: |
+    Use this section to provide any additional information you might have
+    like screenshots, notes, or links to ideas.
 
