@@ -18,7 +18,7 @@ body:
     label: "Description"
     description: "A brief description of the issue."
     placeholder: |
-    A clear and concise description of what you expected to happen.
+      A clear and concise description of what you expected to happen.
     validations:
     required: true
   - type: "input"
@@ -26,7 +26,7 @@ body:
     attributes:
     label: "CodeSandBox/Snack link"
     description: |
-    It would be easier for us to debug if you can reproduce the error in a codesandbox link or a snack link. You can use the [codesandbox template](https://codesandbox.io/s/native-base-v3-template-mq6ox)/[snack template](https://snack.expo.io/@mdrehman/nativebase-template).
+      It would be easier for us to debug if you can reproduce the error in a codesandbox link or a snack link. You can use the [codesandbox template](https://codesandbox.io/s/native-base-v3-template-mq6ox)/[snack template](https://snack.expo.io/@mdrehman/nativebase-template).
     placeholder: "https://codesandbox.io/"
     validations:
     required: true
@@ -35,8 +35,9 @@ body:
     attributes:
     label: "Steps to reproduce"
     description: |
-    Explain how to cause the issue in the provided reproduction.
-    value: | 1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error
+      Explain how to cause the issue in the provided reproduction.
+    value: |
+      1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error
   - type: "input"
     id: "chakra-version"
     attributes:
@@ -62,6 +63,5 @@ body:
     attributes:
     label: "Additional Information"
     description: |
-    Use this section to provide any additional information you might have
-    like screenshots, notes, or links to ideas.
+      Use this section to provide any additional information you might have like screenshots, notes, or links to ideas.
 
