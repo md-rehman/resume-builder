@@ -54,22 +54,24 @@ body:
     id: "platform"
     attributes:
       label: "Platform"
-      description: "The platform(s) this issue occurred with."
+      description: "The platform(s) this issue occurred on"
       options: 
         - label: "Android" 
         - label: "CRA" 
+        - label: "Expo" 
         - label: "iOS" 
         - label: "Next"
   - type: "input"
     id: "other-platform"
     attributes:
       label: "Other Platform"
-      description: "Any other platform."
-      placeholder: "platform"
+      description: "Any other platform besides the above one(s)"
+      placeholder: "extra platform(s)"
   - type: "textarea"
     id: "additional-information"
     attributes:
       label: "Additional Information"
       description: |
         Use this section to provide any additional information you might have like screenshots, notes, or links to ideas.
+      placeholder: "Any every extra information is always welcome"
 
