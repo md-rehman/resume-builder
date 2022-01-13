@@ -19,7 +19,7 @@ body:
       description: "A brief description of the issue."
       placeholder: |
         A clear and concise description of what you expected to happen.
-      validations:
+    validations:
       required: true
   - type: "input"
     id: "reproduction"
@@ -28,7 +28,7 @@ body:
       description: |
         It would be easier for us to debug if you can reproduce the error in a codesandbox link or a snack link. You can use the [codesandbox template](https://codesandbox.io/s/native-base-v3-template-mq6ox)/[snack template](https://snack.expo.io/@mdrehman/nativebase-template).
       placeholder: "https://codesandbox.io/"
-      validations:
+    validations:
       required: true
   - type: "textarea"
     id: "steps"
@@ -44,7 +44,7 @@ body:
       label: "Chakra UI Version"
       description: "The version of Chakra UI you use."
       placeholder: "1.6.4"
-      validations:
+    validations:
       required: true
   - type: "checkboxes"
     id: "operating-system"
