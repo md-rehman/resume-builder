@@ -16,10 +16,10 @@ body:
   value: |
   Before reporting this bug, please...
 
-    "1. Check the latest documentation: https://docs.nativebase.io/"
-    "2. Check for existing open/closed issues for a possible duplicate before creating a new issue: https://github.com/GeekyAnts/NativeBase/issues"
-    "3. Use the latest NativeBase release: https://github.com/GeekyAnts/NativeBase/releases"
-    "4. Check examples from NativeBase KitchenSink https://github.com/GeekyAnts/NativeBase-KitchenSink"
+    1. Check the latest documentation: https/://docs.nativebase.io/
+    2. Check for existing open/closed issues for a possible duplicate before creating a new issue: https://github.com/GeekyAnts/NativeBase/issues
+    3. Use the latest NativeBase release: https://github.com/GeekyAnts/NativeBase/releases
+    4. Check examples from NativeBase KitchenSink https://github.com/GeekyAnts/NativeBase-KitchenSink
 
 - type: "input"
   id: "description"
