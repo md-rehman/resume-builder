@@ -51,7 +51,11 @@ body:
     attributes:
     label: "Operating System"
     description: "The operating system(s) this issue occurred with."
-    options: - label: "android" - label: "iOS" - label: "CRA" - label: "Next"
+    options: 
+      - label: "android" 
+      - label: "iOS" 
+      - label: "CRA" 
+      - label: "Next"
   - type: "input"
     id: "other"
     attributes:
