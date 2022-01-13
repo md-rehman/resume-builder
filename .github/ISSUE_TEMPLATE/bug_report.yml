@@ -6,14 +6,6 @@ body:
 - type: "markdown"
   attributes:
   value: |
-  name: "Bug Report"
-description: "File a bug report"
-labels: ["Bug", "v3"]
-body:
-
-- type: "markdown"
-  attributes:
-  value: |
   Before reporting this bug, please...
 
     1. Check the latest documentation: https/://docs.nativebase.io/
