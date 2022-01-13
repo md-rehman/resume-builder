@@ -15,7 +15,7 @@ body:
     attributes:
       label: 'Description'
       description: 'Describe your request as clearly as possible.'
-      placeholder: 'We'll love to know in depth about this feature'
+      placeholder: "We'll love to know in depth about this feature"
     validations:
       required: true
   - type: 'textarea'
@@ -35,7 +35,7 @@ body:
       label: 'Proposed Solution or API'
       description: |
         Please provide code snippets, gists, or links to the ideal design or API.
-      placeholder: 'We know whatever you're it is, its awesome'
+      placeholder: "We know whatever you're it is, its awesome"
     validations:
       required: true
   - type: 'textarea'
