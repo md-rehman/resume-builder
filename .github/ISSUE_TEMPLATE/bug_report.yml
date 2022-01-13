@@ -5,15 +5,14 @@ body:
   - type: "markdown"
     attributes:
       value: |
-        Before reporting this bug, please...
-
+        ### Before reporting this bug, please...
         1. Check the latest documentation: https://docs.nativebase.io/
         2. Check for existing open/closed issues for a possible duplicate before creating a new issue: https://github.com/GeekyAnts/NativeBase/issues
         3. Use the latest NativeBase release: https://github.com/GeekyAnts/NativeBase/releases
         4. Check examples from NativeBase KitchenSink https://github.com/GeekyAnts/NativeBase-KitchenSink
         5. For discussion purpose make use of NativeBase discord: https://discord.gg/TSgCw2UPmb
 
-        Help us help you better 
+        ### Help us help you better 
   - type: "input"
     id: "description"
     attributes:
@@ -73,3 +72,4 @@ body:
       label: "Additional Information"
       description: |
         Use this section to provide any additional information you might have like screenshots, notes, or links to ideas.
+
