@@ -6,12 +6,13 @@ body:
 - type: "markdown"
   attributes:
   value: |
-  Before reporting this bug, please...
+  Thanks for creating an issue 😄!
 
-    1. Check the latest documentation: https/://docs.nativebase.io/
-    2. Check for existing open/closed issues for a possible duplicate before creating a new issue: https://github.com/GeekyAnts/NativeBase/issues
-    3. Use the latest NativeBase release: https://github.com/GeekyAnts/NativeBase/releases
-    4. Check examples from NativeBase KitchenSink https://github.com/GeekyAnts/NativeBase-KitchenSink
+      Please search open/closed issues before submitting. Someone
+      might have asked the same thing before 😉!
+
+      We're all volunteers here, so help us help you by taking the time to
+      accurately fill out this template. ❤️
 
 - type: "input"
   id: "description"
