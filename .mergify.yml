@@ -5,7 +5,7 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-  - name: assign PRs with Python files modified to jd
+  - name: assign PRs with JS files modified to Rehman
     conditions:
       - files~=\.js$
       - -closed
@@ -13,5 +13,21 @@ pull_request_rules:
       assign:
         add_users:
           - MD-REHMAN
+  - name: assign PRs with markdown files modified to team
+    conditions:
+      - files~=\.md$
+      - -closed
+    actions:
+      assign:
+        add_users:
+          - MirzaFaizanBaig
+          - Rehan025
+  - name: assign PRs with yml files modified to team
+    conditions:
+      - files~=\.yml$
+      - -closed
+    actions:
+      assign:
+        add_users:
           - MirzaFaizanBaig
           - Rehan025
