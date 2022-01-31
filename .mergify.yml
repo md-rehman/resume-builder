@@ -1,0 +1,17 @@
+pull_request_rules:
+  - name: Automatic merge on approval
+    conditions:
+      - "#approved-reviews-by>=1"
+    actions:
+      merge:
+        method: merge
+  - name: assign PRs with Python files modified to jd
+    conditions:
+      - files~=\.js$
+      - -closed
+    actions:
+      assign:
+        add_users:
+          - MD-REHMAN
+          - MirzaFaizanBaig
+          - Rehan025
